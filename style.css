@@ -1,8 +1,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Red Hat Display', sans-serif;
-    width: 1240px;
-    height: 650px;
+    width: 1440px;
+    height: auto;
     justify-content: center;
     margin: auto;
 }
@@ -42,10 +42,10 @@ body {
 }
 
 .watch-live-btn {
-    width: 187px;
+    width: 240px;
     height: 56px;
     background-color: red;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 25px;
 }
 
@@ -72,8 +72,22 @@ body {
     main-section  
 --------------------*/
 .main-section {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sub-section {
     background-color: black;
+    display: inline-block;
+    border-radius: 5px;
+    width: 25%;
+    height: 210px;
+}
+
+.sub-section-2 {
+    border: 1px solid black;
+    width: 100%;
 }
 
 .match-group-blog button {
@@ -82,7 +96,7 @@ body {
     width: 187px;
     background-color: white;
     margin: 25px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .match-group-blog button a {
@@ -97,8 +111,39 @@ body {
 
 .match-group-blog .blog {
     background-color: red;
+
 }
 
 .match-group-blog .blog a {
     color: white;
+}
+
+/* --------------
+sub-section-2 
+---------------*/
+.sub-section-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-left: 15px;
+    justify-items: center
+}
+
+.tournament {}
+
+.transfer-button {
+    border-radius: 5px;
+}
+
+.transfer-button a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    font-weight: 550;
+    color: black;
+}
+
+.duration-massage span {
+    font-size: 15px;
+    margin: 5px;
 }
