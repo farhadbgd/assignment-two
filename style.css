@@ -86,7 +86,6 @@ body {
 }
 
 .sub-section-2 {
-    border: 1px solid black;
     width: 100%;
 }
 
@@ -100,8 +99,6 @@ body {
 }
 
 .match-group-blog button a {
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Red Hat Display', sans-serif;
     color: black;
     padding: 30px;
     font-weight: bold;
@@ -146,4 +143,80 @@ sub-section-2
 .duration-massage span {
     font-size: 15px;
     margin: 5px;
+}
+
+/* ----------------
+footer-section
+---------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    background-color: black;
+    color: white;
+    padding: 75px;
+    margin: 50px 0px;
+    justify-content: center;
+
+}
+
+.Goal {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+
+
+}
+
+hr {
+    width: 100%;
+    opacity: 0.2;
+    margin-top: 35px;
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.menu {}
+
+.menu ul {
+    display: flex;
+    font-size: 16px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    padding: 25px;
+
+
+}
+
+.icon span {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-social-icon {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.fa-twitter {
+    padding: 0px 25px;
 }
