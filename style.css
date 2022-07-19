@@ -1,0 +1,36 @@
+.half-width {
+    width: 50%;
+}
+
+.top-banner {
+    border: 1px solid red;
+    display: flex;
+    width: 1350px;
+    height: 650px;
+    justify-content: center;
+    margin: auto;
+    background-color: rgba(22, 22, 22, 1);
+}
+
+.top-banner-information {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.top-banner-information h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.heading {
+    color: white;
+
+}
+
+.player img {
+    width: 581px;
+    height: 613px;
+}
