@@ -1,8 +1,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Red Hat Display', sans-serif;
-    width: 1440px;
-    height: auto;
+    max-width: 1656px;
+    max-height: auto;
     justify-content: center;
     margin: auto;
 }
@@ -126,8 +126,6 @@ sub-section-2
     justify-items: center
 }
 
-.tournament {}
-
 .transfer-button {
     border-radius: 5px;
 }
@@ -145,6 +143,31 @@ sub-section-2
     margin: 5px;
 }
 
+.view-all {
+    text-align: center;
+    margin: 50px 0;
+    visibility: hidden;
+}
+
+.view-all-button {
+    width: 240px;
+    height: 56px;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.view-all-button a {
+    color: white;
+    font-size: 25px;
+    font-weight: 550;
+    text-decoration: none;
+    text-align: center;
+
+
+}
+
 /* ----------------
 footer-section
 ---------------- */
@@ -158,6 +181,12 @@ footer {
     margin: 50px 0px;
     justify-content: center;
 
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .Goal {
@@ -175,13 +204,7 @@ hr {
     margin-top: 35px;
 }
 
-.footer-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
 
-.menu {}
 
 .menu ul {
     display: flex;
@@ -205,12 +228,6 @@ hr {
     color: white;
 }
 
-.main-section {
-    display: flex;
-    justify-content: center;
-
-}
-
 .footer-social-icon {
     text-align: center;
     font-size: 30px;
@@ -219,4 +236,121 @@ hr {
 
 .fa-twitter {
     padding: 0px 25px;
+}
+
+/* -----------------------------
+Responsiveness using Media query
+-------------------------------- */
+/* smaller device */
+@media screen and (max-width:576px) {
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub-section {
+
+        background-color: white;
+        display: flex;
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+
+    }
+
+    .match-group-blog button {
+        display: block;
+        height: 35px;
+        width: 187px;
+        background-color: white;
+        margin: 25px;
+        border-radius: 5px;
+        justify-content: center;
+        border: 1px solid gainsboro;
+    }
+
+    .match-group-blog button a {
+        padding: 5px 25px;
+    }
+
+    .sub-section-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        margin-left: 15px;
+        justify-items: center
+    }
+
+    .view-all {
+        visibility: visible;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+}
+
+/* ------------------
+medium-device
+------------------ */
+@media screen and (min-width: 577px) and (max-width:992px) {
+    .top-banner {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub-section {
+
+        background-color: white;
+        display: inline;
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+
+    }
+
+    .match-group-blog button {
+        display: inline;
+        height: 35px;
+        width: 187px;
+        background-color: white;
+        margin: 25px;
+        border-radius: 5px;
+        justify-content: center;
+        border: 1px solid gainsboro;
+    }
+
+    .match-group-blog button a {
+        padding: 5px 25px;
+    }
+
+    .sub-section-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        margin-left: 15px;
+        justify-items: center
+    }
+
+    .view-all {
+        visibility: visible;
+    }
+
 }
