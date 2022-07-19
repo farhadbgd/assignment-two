@@ -3,13 +3,15 @@
 }
 
 .top-banner {
-    border: 1px solid red;
     display: flex;
-    width: 1350px;
+    width: 1240px;
     height: 650px;
     justify-content: center;
     margin: auto;
     background-color: rgba(22, 22, 22, 1);
+    margin-top: 50px;
+    border-radius: 10px;
+
 }
 
 .top-banner-information {
@@ -17,6 +19,7 @@
     align-items: center;
     font-family: 'Poppins', sans-serif;
     font-family: 'Red Hat Display', sans-serif;
+    margin-left: 100px;
 
 }
 
@@ -25,9 +28,38 @@
     font-weight: bold;
 }
 
+.top-banner-information p {
+    font-size: 16px;
+
+}
+
 .heading {
     color: white;
 
+}
+
+.watch-live-btn {
+    width: 187px;
+    height: 56px;
+    background-color: red;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.watch-live-btn a {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 550;
+    text-decoration: none;
+
+}
+
+.fa-arrow-right {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
 }
 
 .player img {
