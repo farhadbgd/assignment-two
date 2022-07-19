@@ -83,10 +83,27 @@ body {
     border-radius: 5px;
     width: 25%;
     height: 210px;
+
 }
 
-.sub-section-2 {
-    width: 100%;
+
+
+.tournament-information {
+    border: 1px solid rgb(206, 199, 199);
+    padding: 45px;
+    margin-bottom: 25px;
+    background-color: rgb(228, 232, 235);
+    border-radius: 5%;
+}
+
+.participant-country {
+    display: flex;
+}
+
+.participant-country p {
+    margin: 25px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .match-group-blog button {
@@ -96,6 +113,8 @@ body {
     background-color: white;
     margin: 25px;
     border-radius: 5px;
+    margin-left: 75px;
+
 }
 
 .match-group-blog button a {
@@ -123,7 +142,8 @@ sub-section-2
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
     margin-left: 15px;
-    justify-items: center
+    justify-items: center;
+    width: 100%;
 }
 
 .transfer-button {
